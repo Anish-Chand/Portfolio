@@ -118,3 +118,188 @@
 .project-details-toggle:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 @media(max-width:900px){.project-visual{height:390px;max-height:390px}.project-details{grid-column:1 / -1;padding-left:40px}}
 @media(max-width:600px){.project-visual{height:430px;max-height:430px}.project-details{padding-left:30px;padding-right:8px}}
+
+/* Footer polish: a considered closing chapter rather than a thin navigation strip. */
+.site-footer{position:relative;max-width:1240px;margin:0 auto;padding:0 34px 24px;border-top:1px solid var(--line);background:radial-gradient(ellipse at 14% 0%,rgba(201,255,77,.045),transparent 36%)}
+.footer-main{display:grid;grid-template-columns:1.25fr .7fr .9fr 1.15fr;gap:48px;padding:62px 0 58px}
+.footer-brand{width:max-content;font-size:22px}
+.footer-brand .footer-period{color:var(--accent)}
+.footer-brand-column>p{margin:22px 0 24px;color:#a0a2a8;font-size:16px;line-height:1.7;letter-spacing:-.025em}
+.footer-availability{display:flex;align-items:center;gap:9px;color:#888b91;font:9px 'DM Mono';letter-spacing:.07em}
+.footer-availability i{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px rgba(201,255,77,.65)}
+.footer-column,.footer-contact-column{display:flex;flex-direction:column;align-items:flex-start;gap:15px}
+.footer-heading{margin:7px 0 9px;color:#676a70;font:9px 'DM Mono';letter-spacing:.14em}
+.footer-column>a{display:flex;align-items:center;gap:5px;color:#b0b2b7;font-size:12px;transition:color .2s,transform .2s}
+.footer-column>a:hover{color:var(--accent);transform:translateX(3px)}
+.footer-column>a svg{opacity:0;transition:opacity .2s}
+.footer-column>a:hover svg{opacity:1}
+.footer-email{display:flex;align-items:center;gap:10px;font-size:clamp(24px,3vw,35px);font-weight:650;letter-spacing:-.065em;border-bottom:1px solid rgba(201,255,77,.45);padding-bottom:10px;transition:color .2s,border-color .2s}
+.footer-email:hover{color:var(--accent);border-color:var(--accent)}
+.footer-contact-column>p{max-width:230px;margin:-2px 0 4px;color:#85878e;font-size:12px;line-height:1.7}
+.footer-email-address{display:flex;align-items:center;gap:8px;color:#aaa;font:10px 'DM Mono';overflow-wrap:anywhere;transition:color .2s}
+.footer-email-address:hover{color:var(--accent)}
+.footer-bottom{border-top:1px solid var(--line);padding-top:19px;display:grid;grid-template-columns:1fr 1.2fr auto;align-items:center;gap:18px;color:#62656b;font:9px 'DM Mono';letter-spacing:.09em}
+.footer-bottom>span:nth-child(2){text-align:center}
+.back-top{display:flex;align-items:center;gap:7px;color:#a5a7ac;transition:color .2s}
+.back-top:hover{color:var(--accent)}
+@media(max-width:900px){.site-footer{padding-left:20px;padding-right:20px}.footer-main{grid-template-columns:1fr 1fr;gap:42px 34px;padding:48px 0}.footer-brand-column{grid-row:span 1}.footer-bottom{grid-template-columns:1fr auto}.footer-bottom>span:nth-child(2){display:none}}
+@media(max-width:560px){.footer-main{grid-template-columns:1fr 1fr;gap:34px 18px;padding:38px 0}.footer-brand-column,.footer-contact-column{grid-column:1/-1}.footer-brand-column>p{margin:15px 0}.footer-heading{font-size:8px}.footer-column{gap:13px}.footer-column>a{font-size:11px}.footer-contact-column{padding:23px 20px;border:1px solid var(--line);background:rgba(255,255,255,.018)}.footer-email{font-size:30px}.footer-bottom{grid-template-columns:1fr auto;gap:10px;font-size:8px}.footer-bottom>span:first-child{max-width:150px;line-height:1.6}.back-top{font-size:8px}}
+
+/* Readability and spacing pass — stronger contrast, calmer rhythm, larger utility text. */
+:root{--muted:#b0b2b9;--line:rgba(255,255,255,.14)}
+.eyebrow,.section-label{font-size:11px;color:#a6a9b0;letter-spacing:.13em}
+.nav-links{font-size:12px;color:#c0c2c7;gap:30px}
+.project-number,.project-meta{font-size:11px;color:#a3a6ad}
+.tags span{font-size:10px;color:#b9bbc1;padding:8px 10px}
+.cap>span,.cap a{font-size:11px;color:#b7b9bf}
+.footer-main{grid-template-columns:minmax(220px,1.2fr) minmax(120px,.7fr) minmax(165px,.9fr) minmax(260px,1.25fr);gap:clamp(28px,4vw,58px);padding:68px 0 64px;align-items:start}
+.footer-brand-column>p{color:#c0c2c7;font-size:17px;line-height:1.75;margin:25px 0 28px}
+.footer-availability{font-size:11px;line-height:1.55;color:#b4b7be;letter-spacing:.055em;max-width:245px;align-items:flex-start}
+.footer-availability i{flex:0 0 7px;margin-top:5px}
+.footer-column,.footer-contact-column{gap:18px}
+.footer-heading{font-size:11px;line-height:1.5;color:#a4a7ae;letter-spacing:.12em;margin:4px 0 12px}
+.footer-column>a{font-size:14px;line-height:1.5;color:#d0d1d5;gap:7px}
+.footer-column>a svg{opacity:.45}
+.footer-email{font-size:clamp(30px,3vw,40px);line-height:1.1;gap:12px;padding-bottom:14px;letter-spacing:-.055em}
+.footer-contact-column>p{font-size:14px;line-height:1.8;color:#b1b4bb;max-width:270px;margin:0 0 8px}
+.footer-email-address{font:12px/1.6 'DM Mono',monospace;color:#d0d2d7;gap:10px;overflow-wrap:anywhere}
+.footer-bottom{padding-top:22px;gap:24px;color:#a1a4ab;font:11px/1.6 'DM Mono',monospace;letter-spacing:.07em}
+.back-top{font-size:11px;color:#d0d2d7;white-space:nowrap}
+.contact-note{font-size:11px;color:#b2b5bc}
+.inquiry-top,.inquiry-card label,.inquiry-foot{font-size:11px}
+.inquiry-options button{font-size:13px;color:#d0d2d7}
+.inquiry-card textarea{font-size:14px}
+@media(max-width:1000px){.footer-main{grid-template-columns:1fr 1fr;gap:44px 38px}.footer-contact-column{padding:28px;border:1px solid var(--line);background:rgba(255,255,255,.018)}.footer-bottom{grid-template-columns:1fr auto}.footer-bottom>span:nth-child(2){display:none}}
+@media(max-width:560px){.footer-main{grid-template-columns:1fr 1fr;gap:34px 24px;padding:38px 0 32px}.footer-brand-column,.footer-contact-column{grid-column:1/-1}.footer-brand-column>p{font-size:17px;margin:17px 0 20px}.footer-availability{font-size:10px}.footer-heading{font-size:10px;margin-bottom:8px}.footer-column{gap:15px}.footer-column>a{font-size:13px}.footer-contact-column{padding:24px 20px;gap:17px}.footer-email{font-size:34px}.footer-contact-column>p{font-size:14px}.footer-email-address{font-size:11px}.footer-bottom{grid-template-columns:1fr;gap:12px;font-size:10px}.footer-bottom>span:first-child{max-width:none}.back-top{font-size:10px}.nav-links{font-size:12px}}
+
+/* Footer closing row: keep legal, note, and back-to-top readable at every width. */
+.site-footer .footer-bottom{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto auto;
+  align-items:center;
+  column-gap:clamp(20px,3vw,42px);
+  row-gap:14px;
+  padding:24px 0 8px;
+  color:#b8bbc2;
+  font-size:11px;
+  line-height:1.6;
+  letter-spacing:.045em;
+}
+.site-footer .footer-bottom > span:first-child{
+  min-width:0;
+  max-width:none;
+  white-space:normal;
+}
+.site-footer .footer-bottom > span:nth-child(2){
+  display:block;
+  text-align:right;
+  color:#aeb1b8;
+  max-width:250px;
+}
+.site-footer .footer-bottom .back-top{
+  justify-self:end;
+  font-size:11px;
+  line-height:1.5;
+  gap:8px;
+  padding:8px 0 8px 12px;
+}
+@media(max-width:1000px){
+  .site-footer .footer-bottom{
+    grid-template-columns:minmax(0,1fr) auto;
+    align-items:start;
+    column-gap:24px;
+    row-gap:12px;
+  }
+  .site-footer .footer-bottom > span:nth-child(2){
+    grid-column:1 / -1;
+    grid-row:2;
+    text-align:left;
+    max-width:none;
+  }
+  .site-footer .footer-bottom .back-top{
+    grid-column:2;
+    grid-row:1;
+    align-self:start;
+  }
+}
+@media(max-width:560px){
+  .site-footer .footer-bottom{
+    grid-template-columns:minmax(0,1fr) auto;
+    gap:14px 16px;
+    padding-top:20px;
+    font-size:10px;
+  }
+  .site-footer .footer-bottom > span:first-child{
+    grid-column:1;
+    grid-row:1;
+    max-width:220px;
+  }
+  .site-footer .footer-bottom > span:nth-child(2){
+    grid-column:1 / -1;
+    grid-row:2;
+    font-size:10px;
+    line-height:1.7;
+  }
+  .site-footer .footer-bottom .back-top{
+    grid-column:2;
+    grid-row:1;
+    padding:4px 0 4px 6px;
+    font-size:10px;
+  }
+}
+
+
+/* Structural footer fix: the global footer rule uses flex, which was placing
+   .footer-main and .footer-bottom beside each other. Keep the closing row
+   beneath every footer column and let it span the full footer width. */
+.site-footer {
+  display: block !important;
+  width: 100%;
+}
+.site-footer .footer-main {
+  width: 100%;
+}
+.site-footer .footer-bottom {
+  position: relative;
+  clear: both;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) auto;
+  align-items: center;
+  gap: 18px 28px;
+  margin: 0;
+  padding: 22px 0 8px;
+  border-top: 1px solid var(--line);
+}
+@media (max-width: 1000px) {
+  .site-footer .footer-bottom {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  .site-footer .footer-bottom > span:nth-child(2) {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    text-align: left;
+  }
+  .site-footer .footer-bottom .back-top {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+@media (max-width: 560px) {
+  .site-footer .footer-bottom {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 14px 16px;
+  }
+  .site-footer .footer-bottom > span:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .site-footer .footer-bottom > span:nth-child(2) {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+  .site-footer .footer-bottom .back-top {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
